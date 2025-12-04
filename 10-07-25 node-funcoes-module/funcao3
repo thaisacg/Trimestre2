@@ -1,0 +1,6 @@
+const funcao3 = () => {
+    const v = [12, 23, 25, 69, 32];
+    console.log(v);
+}
+
+export default funcao3;

@@ -1,0 +1,6 @@
+const funcao2 = function(){
+    const equipe = 'Real Madrid';
+    console.log(equipe);
+}
+
+export default funcao2; 

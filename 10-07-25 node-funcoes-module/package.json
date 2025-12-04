@@ -1,0 +1,1 @@
+{"type":"module","name":"10-07-25-node-funcoes-module","version":"1.0.0","description":"Teste Node.js","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"author":"Thaisa","license":"ISC","dependencies":{"express":"^5.1.0"}}
