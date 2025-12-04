@@ -1,8 +1,8 @@
 import { Cliente } from '../../../database/tables';
 import { redirect } from 'next/navigation';
 
-import "../css/cadastro.css";
-import "../css/base.css";
+import "../../css/cadastro.css";
+import "../../css/base.css";
 
 async function insereCliente(formData){
     'use server';

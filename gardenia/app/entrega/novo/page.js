@@ -1,6 +1,9 @@
 import { Entrega } from '../../../database/tables';
 import { redirect } from 'next/navigation';
 
+import "../../css/cadastro.css";
+import "../../css/base.css";
+
 async function insereEntrega(formData){
     'use server';
     const dados = {
@@ -16,6 +19,7 @@ async function insereEntrega(formData){
 
 function TelaNovaEntrega(){
     return (
+        <div>
         <form action={insereEntrega}>
 
             <label htmlFor="statusEntrega">Status</label><br/>
@@ -30,9 +34,11 @@ function TelaNovaEntrega(){
             <label htmlFor="codRastreamento">CodigoRastreio</label><br/>
             <input type="text" name="codRastreamento"/> <br/>
 
-            <button>Cadastrar</button>
+            <button className='bt-classico'>Cadastrar</button>
 
         </form>
+
+        </div>
     );
 }
 
