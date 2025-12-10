@@ -43,8 +43,8 @@ async function telaEditaEntrega({ searchParams}){
             <label htmlFor="dataEnvio">Data de envio</label><br/>
             <input type="text" name="dataEnvio" defaultValue={entrega.dataEnvio} /> <br/>
 
-            <label htmlFor="codRastreamentoep">Código de rastreio</label><br/>
-            <input type="text" name="codRastreamentoep" defaultValue={entrega.codRastreamentoep} /> <br/>
+            <label htmlFor="codRastreamento">Código de rastreio</label><br/>
+            <input type="text" name="codRastreamento" defaultValue={entrega.codRastreamento} /> <br/>
 
             <button className='bt-classico'>Salvar</button>
 

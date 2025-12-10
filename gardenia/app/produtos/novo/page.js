@@ -1,6 +1,9 @@
 import { Produto } from '../../../database/tables';
 import { redirect } from 'next/navigation';
 
+import "../../css/cadastro.css";
+import "../../css/base.css";
+
 async function insereProduto(formData){
     'use server';
     const dados = {
@@ -15,6 +18,7 @@ async function insereProduto(formData){
 
 function TelaNovoProduto(){
     return (
+        <div>
         <form action={insereProduto}>
 
             <label htmlFor="nome">Titulo</label><br/>
@@ -26,9 +30,10 @@ function TelaNovoProduto(){
             <label htmlFor="estoque">Estoque</label><br/>
             <input type="text" name="estoque"/> <br/>
 
-            <button>Cadastrar</button>
+            <button className='bt-classico'>Cadastrar</button>
 
         </form>
+        </div>
     );
 }
 

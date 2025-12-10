@@ -1,6 +1,9 @@
 import { MeioPagamento } from '../../../database/tables';
 import { redirect } from 'next/navigation';
 
+import "../../css/cadastro.css";
+import "../../css/base.css";
+
 async function insereMeioPag(formData){
     'use server';
     const dados = {
@@ -16,6 +19,7 @@ async function insereMeioPag(formData){
 
 function TelaNovoMeioPag(){
     return (
+        <div>
         <form action={insereMeioPag}>
 
             <label htmlFor="data">Data</label><br/>
@@ -30,10 +34,12 @@ function TelaNovoMeioPag(){
             <label htmlFor="descMeioPag">Descrição</label><br/>
             <input type="text" name="descMeioPag"/> <br/>
 
-            <button>Cadastrar</button>
+            <button className='bt-classico'>Cadastrar</button>
 
         </form>
+        </div>
     );
 }
 
 export default TelaNovoMeioPag;
+

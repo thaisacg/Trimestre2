@@ -1,6 +1,9 @@
 import { Produto } from '../../../database/tables'
 import { redirect } from 'next/navigation';
 
+import "../../css/cadastro.css";
+import "../../css/base.css";
+
 async function editaProduto(formData) {
     'use server';
 
@@ -22,7 +25,7 @@ async function telaEditaProduto({ searchParams }) {
     const id = searchParams.id;
     const produtos = await Produto.findByPk(id);
     return (
-        <>
+        <div>
             <h1>Editando o produto</h1>
 
             <form action={editaProduto}>
@@ -38,11 +41,11 @@ async function telaEditaProduto({ searchParams }) {
                 <label htmlFor="estoque">Estoque</label><br />
                 <input type="text" name="estoque" defaultValue={produtos.estoque} /> <br />
 
-                <button>Salvar</button>
+                <button className='bt-classico'>Salvar</button>
 
             </form>
 
-        </>
+        </div>
     )
 
 }

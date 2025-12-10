@@ -1,8 +1,9 @@
-import "../css/listagem.css";
-
 import { Cliente } from "../../database/tables";
 import { redirect } from "next/navigation";
+// v
+import "../css/listagem.css";
 
+// v^
 async function deletarCliente(formData) {
     'use server';
     const id = formData.get(';id');
@@ -10,6 +11,7 @@ async function deletarCliente(formData) {
     await cliente.destroy();
     redirect('/cliente');
 }
+// ^
 
 async function Tela_Cliente() {
     const cliente = await Cliente.findAll();
