@@ -7,7 +7,7 @@ const mysql = new Sequelize({
     dialectModule: mysql2,
     host: 'localhost',
     port: '3306',
-    database: 'projetofinal',
+    database: 'gardenia',
     username: 'root',
     password: 'root'
 });

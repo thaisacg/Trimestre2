@@ -12,10 +12,10 @@ async function editaArtista(formData){
     const pais = formData.get('pais');
     const gravadora = formData.get('gravadora');
 
-    const cliente = await Artista.findByPk(id);
-    cliente.nome = nome;
-    cliente.pais = pais;
-    cliente.gravadora = gravadora;
+    const artista = await Artista.findByPk(id);
+    artista.nome = nome;
+    artista.pais = pais;
+    artista.gravadora = gravadora;
  
 
     await artista.save();

@@ -72,6 +72,6 @@ Pedido.belongsToMany(Produto, { through: Pedido_Produto });
 Produto.belongsToMany(Pedido, { through: Pedido_Produto });
 
 // mysql.sync({ force: true });
-mysql.sync();
+ mysql.sync();
 
 export { Cliente, Produto, Pedido, MeioPagamento, Entrega, Pedido_Produto, Artista, Genero };

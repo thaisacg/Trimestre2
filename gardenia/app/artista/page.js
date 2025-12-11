@@ -43,7 +43,7 @@ async function Tela_Artista() {
                                             <button>Editar</button>
                                         </form>
 
-                                        <form action={deletarArtita}>
+                                        <form action={deletarArtista}>
                                             <input type="hidden" name="id" defaultValue={fil.id} />
                                             <button>Exluir</button>
                                         </form>
