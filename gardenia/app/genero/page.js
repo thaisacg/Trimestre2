@@ -6,7 +6,7 @@ import "../css/listagem.css";
 // v^
 async function deletarGenero(formData) {
     'use server';
-    const id = formData.get(';id');
+    const id = formData.get('id');
     const genero = await Genero.findByPk(id);
     await genero.destroy();
     redirect('/genero');
