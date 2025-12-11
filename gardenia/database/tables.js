@@ -37,6 +37,9 @@ const Entrega = mysql.define('entrega', {
     codRastreamento: DataTypes.STRING
 });
 
+const Artista = mysql.define('artista', {
+    
+});
 
 const Pedido_Produto = mysql.define('pedido_produto', {
     quantidade: DataTypes.INTEGER,
