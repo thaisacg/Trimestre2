@@ -43,6 +43,12 @@ const Artista = mysql.define('artista', {
     gravadora: DataTypes.STRING,
 });
 
+const Genero = mysql.define('artista', {
+    nome: DataTypes.STRING,
+    paisOrigem: DataTypes.STRING,
+    anoOrigem: DataTypes.STRING,
+});
+
 const Pedido_Produto = mysql.define('pedido_produto', {
     quantidade: DataTypes.INTEGER,
 });
