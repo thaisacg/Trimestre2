@@ -43,7 +43,7 @@ const Artista = mysql.define('artista', {
     gravadora: DataTypes.STRING,
 });
 
-const Genero = mysql.define('artista', {
+const Genero = mysql.define('genero', {
     nome: DataTypes.STRING,
     paisOrigem: DataTypes.STRING,
     anoOrigem: DataTypes.STRING,
@@ -74,4 +74,4 @@ Produto.belongsToMany(Pedido, { through: Pedido_Produto });
 // mysql.sync({ force: true });
 mysql.sync();
 
-export { Cliente, Produto, Pedido, MeioPagamento, Entrega, Pedido_Produto };
+export { Cliente, Produto, Pedido, MeioPagamento, Entrega, Pedido_Produto, Artista, Genero };

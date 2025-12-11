@@ -1,4 +1,4 @@
-import { Artista } from "../../database/tables";
+import { Artista } from "../../database/tables.js";
 import { redirect } from "next/navigation";
 // v
 import "../css/listagem.css";
@@ -6,7 +6,7 @@ import "../css/listagem.css";
 // v^
 async function deletarArtista(formData) {
     'use server';
-    const id = formData.get(';id');
+    const id = formData.get('id');
     const artista = await Artista.findByPk(id);
     await artista.destroy();
     redirect('/artista');
@@ -43,7 +43,7 @@ async function Tela_Artista() {
                                             <button>Editar</button>
                                         </form>
 
-                                        <form action={deletarCliente}>
+                                        <form action={deletarArtita}>
                                             <input type="hidden" name="id" defaultValue={fil.id} />
                                             <button>Exluir</button>
                                         </form>

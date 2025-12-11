@@ -12,6 +12,8 @@ function Menu() {
                 <a href="/entrega">Entrega </a> 
                 <a href="/cliente">Cliente </a> 
                 <a href="/meiopag">Meio de pagamento </a>
+                <a href="/artista">Artista </a>
+                <a href="/genero">Genero </a>
 
             </div>
         </nav>
