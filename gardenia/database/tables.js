@@ -38,7 +38,9 @@ const Entrega = mysql.define('entrega', {
 });
 
 const Artista = mysql.define('artista', {
-    
+    nome: DataTypes.STRING,
+    pais: DataTypes.STRING,
+    gravadora: DataTypes.STRING,
 });
 
 const Pedido_Produto = mysql.define('pedido_produto', {
